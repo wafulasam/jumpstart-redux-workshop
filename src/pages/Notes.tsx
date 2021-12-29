@@ -8,8 +8,8 @@ const Notes = () => {
 
   return (
     <>
+      <h1>Notes</h1>
       <NewNoteInput addNote={addNote} />
-      <hr />
       <ul>
         {notes.map((note: string) => (
           <li key={note}>{note}</li>
