@@ -1,7 +1,7 @@
 /* fonts */
 @import url("http://fonts.cdnfonts.com/css/segoe-ui-4");
 body {
-  /* font-family: "Lato", sans-serif; */
   text-align: center;
-  font-family: "Segoe UI", sans-serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
 }

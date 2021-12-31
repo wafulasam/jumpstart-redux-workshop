@@ -16,6 +16,7 @@ const Shop = () => {
     <div>
       <h1>Ashley's</h1>
       <p>cart: {cart.length}</p>
+      {JSON.stringify(cart)}
       {products.map((product: ProductItemProps) => (
         <ProductCard product={product} key={product.id} />
       ))}
