@@ -1,8 +1,5 @@
 import React, { ChangeEvent, useState } from "react";
-
-interface NewNoteInputProps {
-  addNote(note: string): void;
-}
+import { NewNoteInputProps } from "../types";
 
 export const NewNoteInput = ({ addNote }: NewNoteInputProps) => {
   const [note, setNote] = useState("");

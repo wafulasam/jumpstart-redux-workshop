@@ -1,8 +1,6 @@
 // cart reducer
+import { CartState } from "../../types";
 import _ from "lodash";
-export interface CartState {
-   cart: string []
-}
 
 const initialState: any = {
    cart: []

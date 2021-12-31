@@ -1,8 +1,5 @@
 // products reducer
-
-export interface ProductsState {
-   products: string []
-}
+import { ProductsState } from "../../types";
 
 const initialState = {
    products: []

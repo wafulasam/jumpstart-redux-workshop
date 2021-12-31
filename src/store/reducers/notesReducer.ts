@@ -1,7 +1,4 @@
-
-export interface NotesState {
-   notes: string[]
-}
+import { NotesState } from "../../types";
 
 const initialState = {
    notes: []

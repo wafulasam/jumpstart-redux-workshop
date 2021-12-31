@@ -1,14 +1,6 @@
 import React from "react";
+import { ProductProps } from "../types";
 import { addToCart, removeFromCart } from "../store/actions/cartActions";
-
-export interface ProductItemProps {
-  id: number;
-  name: string;
-  quantity: number;
-}
-interface ProductProps {
-  product: ProductItemProps;
-}
 
 const ProductCard = ({ product }: ProductProps) => {
   const addToCartClick = () => {
