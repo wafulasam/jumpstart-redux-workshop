@@ -4,6 +4,7 @@ import { addToCart } from "../store/actions/cartActions";
 export interface ProductItemProps {
   id: number;
   name: string;
+  quantity: number;
 }
 interface ProductProps {
   product: ProductItemProps;

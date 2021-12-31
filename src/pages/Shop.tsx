@@ -3,6 +3,7 @@ import { fetchProducts } from "../store/actions/productsActions";
 import { useAppStore } from "../store/store";
 import { ProductItemProps } from "../components/ProductCard";
 import ProductCard from "../components/ProductCard";
+import { getTotalCartQuantity } from "../utilities";
 
 const Shop = () => {
   const { products, cart } = useAppStore();
@@ -15,7 +16,7 @@ const Shop = () => {
   return (
     <div>
       <h1>Ashley's</h1>
-      <p>cart: {cart.length}</p>
+      <p>cart: {getTotalCartQuantity(cart)}</p>
       {JSON.stringify(cart)}
       {products.map((product: ProductItemProps) => (
         <ProductCard product={product} key={product.id} />
